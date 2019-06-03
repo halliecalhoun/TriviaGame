@@ -19,21 +19,31 @@ var userChoice;
 
 
 var questions = {
-  set1: {   
-        q: "Is this a question?",
-        choices: ["yes", "no", "maybe"],
-        answers: 0
-    },
-  set2: 
-    {   q: "Is this a question?",
-        choices: ["yes", "no", "maybe"],
-        answers: 2
-    },
-  set3:
-    {   q: "Is this a question?",
-        choices: ["yes", "no", "maybe"],
+  q1: {   
+        q: "What year did Alcatraz open as a federal prison?",
+        choices: ["1955", "1934", "1941", "1928"],
         answers: 1
     },
+  q2: 
+    {   q: "What is the nickname for the color of the Golden Gate Bridge?",
+        choices: ["International Orange", "Sunset Red", "Gold Goddess", "Golden State Orange"],
+        answers: 0
+    },
+  q3:
+    {   q: "Which pier in San Francisco is known as the Fishing Pier?",
+        choices: ["39", "5", "29", "7"],
+        answers: 3
+    },
+  q4: 
+  {   q: "How long is the Golden Gate Bridge?",
+      choices: ["2.1 Miles", "1.7 Miles", "2.5 Miles", "1.5 Miles"],
+      answers: 1
+  },
+  q5: 
+  {   q: "At Fisherman's Wharf, there is a pier that is popular with both tourists and sea lions. Which pier is it?",
+      choices: ["Pier 31", "Pier 35", "Pier 39", "Pier 37"],
+      answers: 2
+  },
   }
 // console.log(questions[0].q);
 // We start the game with a score of 0.

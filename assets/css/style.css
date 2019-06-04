@@ -13,38 +13,39 @@ body {
     border: #333333;
     border-style: solid;
     /* border: 2px solid #333333; */
-    margin: 15px auto;
+    margin: 10px auto;
     min-height: 500px;
     width: 65%;
     text-align: center;
     position: relative;
     margin-top: 75px;
-    padding: 15px;
+    padding: 10px;
     bottom: 25;
 }
 
 .text-content {
     top: 25;
     bottom: 25;
-    margin: 15px;
+    margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 
 h1 {
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    font-weight: bolder;
-    font-size: 45px;
-    padding: 15px;
+    /* font-weight: bolder; */
+    font-size: 50px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
 h2 {
-    margin: 10px;
+    margin: 5px;
     font-weight: bold;
     font-size: 28px;
-    padding: 10px;
+    padding: 5px;
 }
 
 h3 {
@@ -87,7 +88,7 @@ img {
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -111,7 +112,7 @@ button {
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;

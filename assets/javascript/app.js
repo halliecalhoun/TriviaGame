@@ -76,9 +76,6 @@ var newArray = [];
 var pick;
 var index;
 var userGuess = "";
-// var userChoice = questions[0].choices;
-// var resumeGame = true;
-// var choicesBtn = "";
 var qCount = questions.length;
 
 
@@ -115,12 +112,7 @@ var questions = [
       photo: "assets/images/pier39.jpg"
   }];
 
-// console.log(questions[0].q);
-// We start the game with a score of 0.
-// FUNCTIONS
-// ==============================================================================
-// function for making sure document is ready
-// $(document).ready(function(){
+
   $("#reset").hide();
   
   $("#start").on("click", function(){
@@ -159,18 +151,10 @@ function stop() {
   clearInterval(intervalId);
 }
 
-
-
 function nextQuestion() {
 index = Math.floor(Math.random() * questions.length);
 pick = questions[index];
 
-// if (pick.shown) {
-//   nextQuestion();
-// } else {
-//   console.log(pick.q);
-// if (i <= (pick.choices.length - 1)) {
-  // $("#questions").html("<h2>" + questions[questionIndex].q + "</h2>");
   for (var i = 0; i < pick.choices.length; i++) {
   $("#questions").html("<h3>" + pick.q + "</h3>");
   // var userChoice = $("<div>"); v
@@ -180,23 +164,7 @@ pick = questions[index];
   choicesBtn.attr("data-guessvalue", i);
   // choicesBtn.attr("data-guessvalue", i);
   $("#answer").append(choicesBtn);
-// } else {
-//   clearContent();
-// }
   }
-
-// { 
-//   $("#btnA").append("<p>" + questions[questionIndex].choices[0] + "</p>");
-//   $("#btnB").append("<p>" + questions[questionIndex].choices[1] + "</p>");
-//   $("#btnC").append("<p>" + questions[questionIndex].choices[2] + "</p>");
-//   $("#btnD").append("<p>" + questions[questionIndex].choices[3] + "</p>");
-//   var choicesIndex = (questions[questionIndex].choices[i]);
-//   $("#btnA").attr("value", choicesIndex.toString());
-//   $("#btnB").attr("value", choicesIndex.toString());
-//   $("#btnC").attr("value", choicesIndex.toString());
-//   $("#btnD").attr("value", choicesIndex.toString());
-// 
-
 
 
 $(".choices-button").on("click", function() {
@@ -220,31 +188,6 @@ $(".choices-button").on("click", function() {
 })
 }
 
-  //   var userChoice = questions[questionIndex].choices[i]
-  // if (userChoice === questions[questionIndex].answers) {
-  //     alert("you are right");
-  //   } else {
-  //     alert("you are wrong");
-  //   }
-
-
-
-// Function to render questions.
-    // function renderQuestion() {
-    //   // If there are still more questions, render the next one.
-    //   if (questionIndex <= (questions.length - 1)) {
-    //     nextQuestion();
-    //     // function nextQuestion() {
-    //     // $("#main-div").html("<h2>" + questions[questionIndex].q + "</h2>");
-    //   }
-    //   // If there aren't, render the end game screen.
-    //   else {
-    //     clearContent();
-    //     // $("#main-div").html("Game Over!");
-    //     // $("#score").html("Final Score: " + score + " out of " + questions.length);
-    //   }
-    // }
-
 function clearContent () {
   
   $("#answer").append("<img src=" + pick.photo + ">");
@@ -254,8 +197,6 @@ function clearContent () {
   var hidontent = setTimeout(function() {
     $("#answer").empty();
     number = 31;
- 
-    // if (pick) {
     
     if ((correctAnswers + wrongAnswers + unanswerCount) === 5) {
       $("#questions").empty();
@@ -292,33 +233,3 @@ $("#reset").on("click", function() {
 
 
 
-
-
-// Function that updates the score...
-
-  // function updateScore() {
-  //   $("#score").html("Score: " + score);
-  // }
-
-
-  // function renderAnswer() {
-  //   for (var i = 0; i < questions[0].choices.length; i++) {
-  //     console.log(questions[0].choices[i]);
-  //     $("#main-div").html("<p>" + questions[questionIndex].choices[i] + "</p>");
-  //   }
-  // }  
-
-
-  // function checkAnswer() {
-  //   if (userChoice === questions[questionIndex].choices.answers) {
-  //       $("result").text("Your Answer: " + userChoice + " is correct!")
-  //       nextQuestion();
-  //     }
-  //   }
-
-
-//     $("#main-div").html(questions[questionIndex].a);
-// }
-// function displayDiv() {
-//     $("#main-div").html(q1);
-// }

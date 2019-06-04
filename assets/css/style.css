@@ -3,29 +3,67 @@ body {
     background-size: cover;
     margin: 0 auto;
 }
+
 .wrapper {
     background-color: rgba(255, 255, 255, 0.712);
-    border: 2px solid #333333;
+    border-radius: 8px;
+    background-color: #ffffffcb;
+    border: #333333;
+    border-style: solid;
+    /* border: 2px solid #333333; */
     margin: 15px auto;
-    height: 500px;
-    width: 65%;
+    min-height: 500px;
+    width: 75%;
     text-align: center;
+    position: relative;
+    margin-top: 75px;
+    padding: 10px;
+    bottom: 25;
 }
+
+.text-content {
+    top: 25;
+    bottom: 25;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 h1 {
     text-align: center;
     font-weight: bolder;
-    padding: 25px;
-    font-size: 50px;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-h2, h3, h4 {
-    margin: 25px;
+h2 {
+    margin: 10px;
     font-weight: bold;
+    font-size: 28px;
+    padding: 10px;
+}
+
+h3 {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+}
+
+h4 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 10px;
 }
 
 img {
-    max-height: 250px;
+    max-height: 200px;
+    border-radius: 4px;
+    border: #333333;
+    border-style: solid;
 
 }
 
@@ -41,47 +79,47 @@ img {
 
 .choices-button {
     margin: auto;
-    border-radius: 10px;
-    background-color: #dddddd;
+    border-radius: 6px;
+    background-color: #52f3d8;
     border: white;
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 5px 8px 5px 8px;
+    margin: 15px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .choices-button:hover {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4), 0 3px 15px 0 rgba(0,0,0,0.30);
     opacity: .75;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 button {
     position: relative;
     margin: auto;
-    border-radius: 10px;
-    background-color: #dddddd;
+    border-radius: 6px;
+    background-color: #52f3d8;
     border: white;
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 5px 8px 5px 8px;
+    margin: 15px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 button:hover {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4), 0 3px 15px 0 rgba(0,0,0,0.30);
     opacity: .75;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
 }

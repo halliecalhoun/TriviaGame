@@ -201,6 +201,8 @@ function clearContent () {
     if ((correctAnswers + wrongAnswers + unanswerCount) === 5) {
       $("#questions").empty();
       $("#answer").empty();
+      $("#show-number").empty();
+      $("#time-remaining").empty();
       $("#questions").html("<h4>" + "Game over! Here is how you did: " + "</h4>");
       $("#answer").append("<h4>" + "Correct: " + correctAnswers + "</h4>");
       $("#answer").append("<h4>" + "Incorrect: " + wrongAnswers + "</h4>");

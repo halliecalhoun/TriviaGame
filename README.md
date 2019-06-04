@@ -9,6 +9,7 @@ This trivia game is all about San Francisco, CA! Test your knowledge of this bea
 * HTML5
 * CSS
 * Bootstrap
+* Google Fonts
 * JavaScript
 * JQuery
 

@@ -12,6 +12,18 @@ body {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 25px;
+    font-size: 50px;
+}
+
+h2, h3, h4 {
+    margin: 25px;
+    font-weight: bold;
+}
+
 img {
     max-height: 250px;
 
@@ -24,5 +36,52 @@ img {
 
 #answer {
     text-align: center;
+    font-weight: 500;
+}
+
+.choices-button {
+    margin: auto;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 5px 8px 5px 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.choices-button:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4), 0 3px 15px 0 rgba(0,0,0,0.30);
+    opacity: .75;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button {
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #dddddd;
+    border: white;
+    border-style: solid;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 5px 8px 5px 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4), 0 3px 15px 0 rgba(0,0,0,0.30);
+    opacity: .75;
+    font-size: 18px;
     font-weight: 500;
 }

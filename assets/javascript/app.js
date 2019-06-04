@@ -103,7 +103,7 @@ var questions = [
         photo: "assets/images/pier7.jpg"
     },
    
-  {   q: "How long is the Golden Gate Bridge?",
+  {   q: "How many miles long is the Golden Gate Bridge?",
       choices: ["2.1 Miles", "1.7 Miles", "2.5 Miles", "1.5 Miles"],
       answers: 1,
       photo: "assets/images/ggb_2.jpg"
@@ -142,7 +142,7 @@ var questions = [
 function decrement() {
   number--;
   // decremends that variable and appends it to html
-  $("#show-number").html("<h3>" + "Time Remaining: " + number + "</h3>");
+  $("#show-number").html("<h2>" + "Time Remaining: " + number + "</h2>");
   if (number === 0) {
     unanswerCount++;
     stop();
@@ -172,7 +172,7 @@ pick = questions[index];
 // if (i <= (pick.choices.length - 1)) {
   // $("#questions").html("<h2>" + questions[questionIndex].q + "</h2>");
   for (var i = 0; i < pick.choices.length; i++) {
-  $("#questions").html("<h2>" + pick.q + "</h2>");
+  $("#questions").html("<h3>" + pick.q + "</h3>");
   // var userChoice = $("<div>"); v
   var choicesBtn = $("<button>")
   choicesBtn.addClass("choices-button");
@@ -206,14 +206,14 @@ $(".choices-button").on("click", function() {
     stop();
     correctAnswers++;
     userGuess = "";
-    $("#answer").html("<p>" + "You are correct!" + "</p>");
+    $("#answer").html("<h4>" + "You are correct!" + "</h4>");
     // nextQuestion();
     clearContent();
   } else {
     stop();
     wrongAnswers++;
     userGuess = "";
-    $("#answer").html("<p>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</p>");
+    $("#answer").html("<h4>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</h4>");
     // nextQuestion();
     clearContent();
   }

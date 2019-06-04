@@ -263,7 +263,7 @@ function clearContent () {
       $("#questions").html("<h3>" + "Game over! Here is how you did: " + "</h3>");
       $("#answer").append("<h4>" + "Correct: " + correctAnswers + "</h4>");
       $("#answer").append("<h4>" + "Incorrect: " + wrongAnswers + "</h4>");
-      $("#answer").append("<h4>" + "Unanswered " + unanswerCount + "</h4>");
+      $("#answer").append("<h4>" + "Unanswered: " + unanswerCount + "</h4>");
       $("#reset").show();
       correctCount = 0;
       wrongCount = 0;

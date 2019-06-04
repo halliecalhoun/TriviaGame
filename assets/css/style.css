@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/golden-gate-bridge-1081782_1920.jpg");
+    background-size: cover;
+    margin: 0 auto;
+}
 .wrapper {
     background-color: rgba(255, 255, 255, 0.712);
     border: 2px solid #333333;
@@ -5,4 +10,19 @@
     height: 500px;
     width: 65%;
     text-align: center;
+}
+
+img {
+    max-height: 250px;
+
+}
+
+#questions {
+    text-align: center;
+    font-weight: bold;
+}
+
+#answer {
+    text-align: center;
+    font-weight: 500;
 }

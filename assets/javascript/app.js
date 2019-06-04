@@ -92,7 +92,7 @@ var questions = [
     },
    
     {   q: "What is the nickname for the color of the Golden Gate Bridge?",
-        choices: ["International Orange", "Sunset Red", "Gold Goddess", "Golden State Orange"],
+        choices: ["International Orange", "Gold Goddess", "Sunset Red", "Golden State Gold"],
         answers: 0,
         photo: "assets/images/ggb_1.jpg"
     },
@@ -146,7 +146,7 @@ function decrement() {
   if (number === 0) {
     unanswerCount++;
     stop();
-    $("#answer").html("<p>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</p>");
+    $("#answer").html("<h4>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</h4>");
     userGuess = "";
     // nextQuestion();
     clearContent();
@@ -260,7 +260,7 @@ function clearContent () {
     if ((correctAnswers + wrongAnswers + unanswerCount) === 5) {
       $("#questions").empty();
       $("#answer").empty();
-      $("#questions").html("<h3>" + "Game over! Here is how you did: " + "</h3>");
+      $("#questions").html("<h4>" + "Game over! Here is how you did: " + "</h4>");
       $("#answer").append("<h4>" + "Correct: " + correctAnswers + "</h4>");
       $("#answer").append("<h4>" + "Incorrect: " + wrongAnswers + "</h4>");
       $("#answer").append("<h4>" + "Unanswered: " + unanswerCount + "</h4>");

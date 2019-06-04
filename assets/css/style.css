@@ -1,6 +1,8 @@
 body {
     background-image: url("../images/golden-gate-bridge-1081782_1920.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
 
@@ -13,11 +15,11 @@ body {
     /* border: 2px solid #333333; */
     margin: 15px auto;
     min-height: 500px;
-    width: 75%;
+    width: 65%;
     text-align: center;
     position: relative;
     margin-top: 75px;
-    padding: 10px;
+    padding: 15px;
     bottom: 25;
 }
 
@@ -33,8 +35,8 @@ body {
 h1 {
     text-align: center;
     font-weight: bolder;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 45px;
+    padding: 15px;
     margin-bottom: 10px;
 }
 
@@ -49,7 +51,7 @@ h3 {
     margin: 10px;
     font-weight: 400;
     font-size: 30px;
-    padding: 10px;
+    padding: 20px;
 }
 
 h4 {
@@ -85,7 +87,7 @@ img {
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -109,7 +111,7 @@ button {
     border-style: solid;
     padding: 10px 20px 10px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;

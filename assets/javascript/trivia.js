@@ -87,19 +87,19 @@ var questions = [
         q: "What year did Alcatraz open as a federal prison?",
         choices: ["1955", "1934", "1941", "1928"],
         answers: 1,
-        photo: "../assets/images/alcatraz-1630477_640.jpg"
+        photo: "assets/images/alcatraz-1630477_640.jpg"
     },
    
     {   q: "What is the nickname for the color of the Golden Gate Bridge?",
         choices: ["International Orange", "Sunset Red", "Gold Goddess", "Golden State Orange"],
         answers: 0,
-        photo: "../assets/images/ggb_1.jpg"
+        photo: "assets/images/ggb_1.jpg"
     },
   
     {   q: "Which pier in San Francisco is known as the Fishing Pier?",
         choices: ["Pier 39", "Pier 5", "Pier 29", "Pier 7"],
         answers: 3,
-        photo: "../assets/images/pier7.jpg"
+        photo: "assets/images/pier7.jpg"
     },
    
   {   q: "How long is the Golden Gate Bridge?",
@@ -245,9 +245,9 @@ $(".choices-button").on("click", function() {
 
 function clearContent () {
   
-  $("#answerblock").append("<img src=" + pick.photo + ">");
+  $("#answer").append("<img src=" + pick.photo + ">");
 	newArray.push(pick);
-  questions.splice(index,1);
+  questions.splice(index, 1);
   
   var hidContent = setTimeout(function() {
     $("#answer").empty();

@@ -58,6 +58,7 @@
 
 // declare golbal variables:
 var startTimer;
+var hidContent;
 var number = 31;
 var intervalId;
 var correctAnswers = 0;
@@ -168,20 +169,21 @@ pick = questions[index];
 //   nextQuestion();
 // } else {
 //   console.log(pick.q);
-  
+// if (i <= (pick.choices.length - 1)) {
   // $("#questions").html("<h2>" + questions[questionIndex].q + "</h2>");
   for (var i = 0; i < pick.choices.length; i++) {
-    if (i <= (pick.choices.length - 1)) {
   $("#questions").html("<h2>" + pick.q + "</h2>");
-  // var userChoice = $("<div>");
+  // var userChoice = $("<div>"); v
   var choicesBtn = $("<button>")
   choicesBtn.addClass("choices-button");
   choicesBtn.html(pick.choices[i]);
   choicesBtn.attr("data-guessvalue", i);
   // choicesBtn.attr("data-guessvalue", i);
   $("#answer").append(choicesBtn);
-}
-}
+// } else {
+//   clearContent();
+// }
+  }
 
 // { 
 //   $("#btnA").append("<p>" + questions[questionIndex].choices[0] + "</p>");
@@ -203,15 +205,15 @@ $(".choices-button").on("click", function() {
   if (userGuess === pick.answers) {
     stop();
     correctAnswers++;
-    $("#answer").html("<p>" + "You are correct!" + "</p>");
     userGuess = "";
+    $("#answer").html("<p>" + "You are correct!" + "</p>");
     // nextQuestion();
     clearContent();
   } else {
     stop();
     wrongAnswers++;
-    $("#answer").html("<p>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</p>");
     userGuess = "";
+    $("#answer").html("<p>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</p>");
     // nextQuestion();
     clearContent();
   }
@@ -249,12 +251,15 @@ function clearContent () {
 	newArray.push(pick);
   questions.splice(index, 1);
   
-  var hidContent = setTimeout(function() {
+  var hidontent = setTimeout(function() {
     $("#answer").empty();
     number = 31;
-
-    if ((wrongAnswers + correctAnswers + unanswerCount) === qCount) {
+ 
+    // if (pick) {
+    
+    if ((correctAnswers + wrongAnswers + unanswerCount) === 5) {
       $("#questions").empty();
+      $("#answer").empty();
       $("#questions").html("<h3>" + "Game over! Here is how you did: " + "</h3>");
       $("#answer").append("<h4>" + "Correct: " + correctAnswers + "</h4>");
       $("#answer").append("<h4>" + "Incorrect: " + wrongAnswers + "</h4>");
@@ -267,6 +272,7 @@ function clearContent () {
       run();
       nextQuestion();
     }
+  
   }, 3000);
   }
 

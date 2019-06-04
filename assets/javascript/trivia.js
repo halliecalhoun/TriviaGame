@@ -58,7 +58,7 @@
 
 // declare golbal variables:
 var startTimer;
-var number = 30;
+var number = 31;
 var intervalId;
 var correctAnswers = 0;
 var wrongAnswers = 0;
@@ -145,8 +145,10 @@ function decrement() {
   if (number === 0) {
     unanswerCount++;
     stop();
-    $("#answer").html("<p>" + "Your time is up! The correct answer is " + "</p>");
-    
+    $("#answer").html("<p>" + "Incorrect! The correct answer is: " + pick.choices[pick.answers] + "</p>");
+    userGuess = "";
+    // nextQuestion();
+    clearContent();
   }
 }
 
@@ -249,7 +251,7 @@ function clearContent () {
   
   var hidContent = setTimeout(function() {
     $("#answer").empty();
-    number = 30;
+    number = 31;
 
     if ((wrongAnswers + correctAnswers + unanswerCount) === qCount) {
       $("#questions").empty();
